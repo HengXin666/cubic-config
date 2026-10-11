@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://cubic.dev/schema/cubic-repository-config.schema.json
+# 全局 cubic 配置：对所有没有自己 cubic.yaml 的仓库生效
+version: 1
+reviews:
+  custom_instructions: |
+    所有评审输出（问题描述、总结、修复建议、Prompt for AI agents）一律使用简体中文；代码、标识符、文件路径保持原样。
+    重点关注业务逻辑和代码逻辑上的真实问题，不要报告风格、命名类问题。
+pr_descriptions:
+  generate: true
+  instructions: |
+    PR 摘要（Summary by cubic）使用简体中文撰写。
